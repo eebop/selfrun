@@ -5,7 +5,7 @@ try:
 In the directory that contains this, (selfrun) do\
 `./run_once.sh`.\
 If that doesn't work, do\
-`chmod +x run_once.sh`.
+`chmod +x run_once.sh`,
 and then run
 `./run_once.sh`
 again.
