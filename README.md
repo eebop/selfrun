@@ -2,12 +2,12 @@
 
 To set up:
 try:
-in the directory that contains this (selfrun) do
-`./run_once.sh`
-if that doesn't work, do
-`chmod +x run_once.sh`
+In the directory that contains this, (selfrun) do\
+`./run_once.sh`.\
+If that doesn't work, do\
+`chmod +x run_once.sh`.
 and then run
 `./run_once.sh`
-again
+again.
 
 now, the command `selfrun` on the terminal should work!
