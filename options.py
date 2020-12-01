@@ -10,8 +10,10 @@ def run(argv):
             break
         operations.append(op)
         del argv[0]
-
-    return operations, argv[0], argv[1:]
+    if not argv == []:
+        return operations, argv[0], argv[1:]
+    else:
+        return [], '', []
 
 def _grab_option(op):
     if op.startswith('-'):
