@@ -7,7 +7,7 @@ echo_all() {
 
 if [ -e ~/.bash_profile ]; then
   echo_all >> ~/.bash_profile
-elif [-e ~/.bashrc]; then
+elif [ -e ~/.bashrc]; then
   echo_all >> ~/.bashrc
 else
   echo "please add these lines to your system's equivilent of ~/.bashrc or ~/.bash_profile:"

@@ -6,4 +6,4 @@ import sys
 
 called_with = options.run(sys.argv[1:])
 
-tokenize.run(called_with[1])
+print(tokenize.run(called_with[1]))
