@@ -3,4 +3,4 @@ import tokenize
 import options
 import sys
 
-options.run(sys.argv)
+print(options.run(sys.argv[1:]))
