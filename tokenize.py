@@ -4,4 +4,6 @@ def run(file):
     return parse(data)
 
 def parse(data):
-    return data.splitlines()
+    data = data.splitlines()
+    data = list(map(lambda o: o.split(), data))
+    return data
