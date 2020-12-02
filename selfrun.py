@@ -8,12 +8,12 @@ __import__('<pythonfile>')
 called_with = options.run(sys.argv[1:])
 if called_with == ([], '', []):
     raise Exception('Cannot launch file "". NOTE: This will be considered STDIN in a later update')
+exe_always = []
 def run(file):
     code = tokenize.run(file)
+    print(code)
 
     vars = []
-
-    exe_always = []
 
     for line in code:
         run_static.run(line)

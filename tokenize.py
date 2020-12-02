@@ -4,7 +4,7 @@ def run(file):
     return parse(data)
 
 def parse(data):
-    data = data.splitlines()
+    data = data.split(';\n')
     data = [x for x in data if x != '']
     data = list(map(lambda o: o.split(), data))
     return data

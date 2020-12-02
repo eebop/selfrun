@@ -1,1 +1,2 @@
-EXEC_BASH echo hi
+EXEC_BASH echo hi;
+EXEC_ALWAYS print('loading');
