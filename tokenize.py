@@ -5,5 +5,6 @@ def run(file):
 
 def parse(data):
     data = data.splitlines()
+    data = [x for x in data if x != '']
     data = list(map(lambda o: o.split(), data))
     return data

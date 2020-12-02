@@ -6,9 +6,12 @@ import re
 
 REPLACE_FOR_FUNC = {
 '.': '_DOT_',
-'*': '_STAR_'
+'*': '_STAR_',
+'#': '_HASH_'
 }
 
+def _HASH_(string):
+    pass
 
 def EXEC_BASH(string):
     os.system(string)
@@ -22,7 +25,7 @@ def EXEC_ONCE(string):
 def EXEC_ALWAYS(string):
     sys.modules['__main__'].exe_always.append(string)
 
-exceptable = ['EXEC_BASH', 'EXEC_PY', 'EXEC_ONCE', 'EXEC_ALWAYS'] # ADD NEW ONES AT THE END, NOT THE FRONT
+exceptable = ['EXEC_BASH', 'EXEC_PY', 'EXEC_ONCE', 'EXEC_ALWAYS', '#'] # ADD NEW ONES AT THE END, NOT THE FRONT
 def run(line):
     matched = match_all(line[0])
     if not matched:
