@@ -6,5 +6,5 @@ def run(file):
 def parse(data):
     data = data.split(';\n')
     data = [x for x in data if x != '']
-    data = list(map(lambda o: o.split(), data))
+    data = list(map(lambda o: o.split(' '), data))
     return data

@@ -1,2 +1,12 @@
-EXEC_BASH echo hi;
-EXEC_ALWAYS print('loading');
+# adding some special commands;
+EXEC_RUN REPLACE_FOR_FUNC['.'] = 'DOT';
+EXEC_RUN REPLACE_FOR_FUNC['*'] = 'STAR';
+# Adding a couple allowed functions;
+EXEC_RUN exceptable.append('.*');
+EXEC_RUN def DOTSTAR(string):
+    print(string)
+    if string:
+        run(tokenize.parse(string)[0]);
+
+EXEC_RUN , there is a hope that this will work;
+LAh de dahs;
